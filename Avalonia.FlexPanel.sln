@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.FlexPanel", "Avalonia.FlexPanel\Avalonia.FlexPanel.csproj", "{58D33E5A-285C-47EE-B85C-49388CE07F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp", "ExampleApp\ExampleApp.csproj", "{FE34D5F0-3B16-4FBD-88A7-C2F3F3ECBA1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58D33E5A-285C-47EE-B85C-49388CE07F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D33E5A-285C-47EE-B85C-49388CE07F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D33E5A-285C-47EE-B85C-49388CE07F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D33E5A-285C-47EE-B85C-49388CE07F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE34D5F0-3B16-4FBD-88A7-C2F3F3ECBA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE34D5F0-3B16-4FBD-88A7-C2F3F3ECBA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE34D5F0-3B16-4FBD-88A7-C2F3F3ECBA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE34D5F0-3B16-4FBD-88A7-C2F3F3ECBA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,78 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ExampleApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:flexPanel="clr-namespace:Avalonia.FlexPanel;assembly=Avalonia.FlexPanel"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ExampleApp.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ExampleApp"
+        WindowState="Maximized"
+        Foreground="White">
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <flexPanel:FlexPanel 
+        Margin="32" 
+        AlignItems="FlexEnd" 
+        AlignContent="Center" 
+        JustifyContent="SpaceAround" 
+        FlexWrap="Wrap" 
+        FlexDirection="Row">
+        <Border 
+            flexPanel:FlexPanel.FlexShrink="4" 
+            flexPanel:FlexPanel.FlexGrow="4" 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="0" />
+        </Border>
+        <Border 
+            flexPanel:FlexPanel.AlignSelf="Center"
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="1" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="2" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="3" />
+        </Border>
+        <Border 
+            Height="100" 
+            flexPanel:FlexPanel.Order="99"
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="4" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="5" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="6" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="7" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="8" />
+        </Border>
+        <Border 
+            Height="100" 
+            Classes="Border4FlexPanelDemoStyle">
+            <TextBlock Text="9" />
+        </Border>
+    </flexPanel:FlexPanel>
+</Window>
