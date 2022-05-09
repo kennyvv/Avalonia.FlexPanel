@@ -1,21 +1,26 @@
-﻿namespace Avalonia.FlexPanel;
+﻿using System;
 
-internal readonly struct FlexItemInfo : IComparable<FlexItemInfo>
+namespace Avalonia.FlexPanel
 {
-    public FlexItemInfo(int index, int order)
+    internal readonly struct FlexItemInfo : IComparable<FlexItemInfo>
     {
-        Index = index;
-        Order = order;
-    }
+        public FlexItemInfo(int index, int order)
+        {
+            Index = index;
+            Order = order;
+        }
 
-    private int Order { get; }
+        private int Order { get; }
 
-    public int Index { get; }
+        public int Index { get; }
 
-    public int CompareTo(FlexItemInfo other)
-    {
-        var orderCompare = Order.CompareTo(other.Order);
-        if (orderCompare != 0) return orderCompare;
-        return Index.CompareTo(other.Index);
+        public int CompareTo(FlexItemInfo other)
+        {
+            var orderCompare = Order.CompareTo(other.Order);
+
+            if (orderCompare != 0) return orderCompare;
+
+            return Index.CompareTo(other.Index);
+        }
     }
 }

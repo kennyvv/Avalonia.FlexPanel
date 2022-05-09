@@ -1,8 +1,9 @@
-﻿namespace Avalonia.FlexPanel.Enums;
-
-public enum FlexWrap
+﻿namespace Avalonia.FlexPanel.Enums
 {
-    NoWrap,
-    Wrap,
-    WrapReverse
+    public enum FlexWrap
+    {
+        NoWrap,
+        Wrap,
+        WrapReverse
+    }
 }

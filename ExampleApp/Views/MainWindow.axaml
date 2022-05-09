@@ -13,66 +13,53 @@
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-    <flexPanel:FlexPanel 
-        Margin="32" 
-        AlignItems="FlexEnd" 
-        AlignContent="Center" 
-        JustifyContent="SpaceAround" 
+    <Window.Styles>
+        <Style Selector="StackPanel.InspectorItem">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Orientation" Value="Vertical" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Background" Value="#d3d3d3"/>
+            <Setter Property="flexPanel:FlexPanel.FlexGrow" Value="4" />
+            <Setter Property="flexPanel:FlexPanel.FlexShrink" Value="1" />
+            <!--<Setter Property="flexPanel:FlexPanel.FlexBasis" Value="64" />-->
+        </Style>
+        
+        <Style Selector="StackPanel.InspectorItem> Label">
+            <Setter Property="Foreground">
+                <SolidColorBrush Color="Black" />
+            </Setter>
+        </Style>
+    </Window.Styles>
+    <flexPanel:FlexPanel
+        FlexDirection="Row" 
         FlexWrap="Wrap" 
-        FlexDirection="Row">
-        <Border 
-            flexPanel:FlexPanel.FlexShrink="4" 
-            flexPanel:FlexPanel.FlexGrow="4" 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="0" />
-        </Border>
-        <Border 
-            flexPanel:FlexPanel.AlignSelf="Center"
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="1" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="2" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="3" />
-        </Border>
-        <Border 
-            Height="100" 
-            flexPanel:FlexPanel.Order="99"
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="4" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="5" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="6" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="7" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="8" />
-        </Border>
-        <Border 
-            Height="100" 
-            Classes="Border4FlexPanelDemoStyle">
-            <TextBlock Text="9" />
-        </Border>
+        JustifyContent="FlexStart" 
+        AlignItems="Stretch"
+        AlignContent="Stretch">
+        <StackPanel Classes="InspectorItem">
+            <Label Target="XInput" HorizontalAlignment="Left">X</Label>
+            <NumericUpDown
+                ShowButtonSpinner="False" 
+                x:Name="XInput"
+                Value="0"
+                HorizontalAlignment="Stretch" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Classes="InspectorItem">
+            <Label Target="YInput" HorizontalAlignment="Left">Y</Label>
+            <NumericUpDown
+                ShowButtonSpinner="False" 
+                x:Name="YInput" 
+                Value="0"
+                HorizontalAlignment="Stretch" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Classes="InspectorItem">
+            <Label Target="ZInput" HorizontalAlignment="Left">Z</Label>
+            <NumericUpDown
+                ShowButtonSpinner="False" 
+                x:Name="ZInput" 
+                Value="0"
+                HorizontalAlignment="Stretch" />
+        </StackPanel>
+        
     </flexPanel:FlexPanel>
 </Window>

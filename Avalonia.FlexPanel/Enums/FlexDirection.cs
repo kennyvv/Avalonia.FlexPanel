@@ -1,9 +1,10 @@
-﻿namespace Avalonia.FlexPanel.Enums;
-
-public enum FlexDirection
+﻿namespace Avalonia.FlexPanel.Enums
 {
-    Row,
-    RowReverse,
-    Column,
-    ColumnReverse
+    public enum FlexDirection
+    {
+        Row,
+        RowReverse,
+        Column,
+        ColumnReverse
+    }
 }

@@ -1,10 +1,11 @@
-﻿namespace Avalonia.FlexPanel.Enums;
-
-public enum FlexItemsAlignment
+﻿namespace Avalonia.FlexPanel.Enums
 {
-    Stretch,
-    FlexStart,
-    FlexEnd,
-    Center,
-    Baseline
+    public enum FlexItemsAlignment
+    {
+        Stretch,
+        FlexStart,
+        FlexEnd,
+        Center,
+        Baseline
+    }
 }

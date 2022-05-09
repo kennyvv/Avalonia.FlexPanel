@@ -1,10 +1,11 @@
-﻿namespace Avalonia.FlexPanel.Enums;
-
-public enum FlexJustifyContent
+﻿namespace Avalonia.FlexPanel.Enums
 {
-    FlexStart,
-    FlexEnd,
-    Center,
-    SpaceBetween,
-    SpaceAround
+    public enum FlexJustifyContent
+    {
+        FlexStart,
+        FlexEnd,
+        Center,
+        SpaceBetween,
+        SpaceAround
+    }
 }

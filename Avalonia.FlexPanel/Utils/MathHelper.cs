@@ -1,6 +1,9 @@
-﻿namespace Avalonia.FlexPanel.Utils;
+﻿using System;
 
-internal static class MathHelper
+namespace Avalonia.FlexPanel.Utils
+{
+
+    internal static class MathHelper
     {
         internal const double DBL_EPSILON = 2.2204460492503131e-016;
 
@@ -26,6 +29,7 @@ internal static class MathHelper
             {
                 return AreClose(value1, value2);
             }
+
             return true;
         }
 
@@ -39,6 +43,7 @@ internal static class MathHelper
             {
                 return AreClose(value1, value2);
             }
+
             return true;
         }
 
@@ -48,10 +53,12 @@ internal static class MathHelper
             {
                 return min.Value;
             }
+
             if (max.HasValue && value > max.Value)
             {
                 return max.Value;
             }
+
             return value;
         }
 
@@ -61,6 +68,8 @@ internal static class MathHelper
             {
                 return lhs / rhs;
             }
+
             return fallback;
         }
     }
+}
